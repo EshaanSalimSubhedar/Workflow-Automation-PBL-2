@@ -1,0 +1,22 @@
+{
+  "loan_approval": [
+    {"applicantId":"APP-101","monthlyIncome":6000,"requestedAmount":30000},
+    {"applicantId":"BAD","monthlyIncome":0,"requestedAmount":30000},
+    {"applicantId":"APP-999","monthlyIncome":3000,"requestedAmount":25000},
+    {"applicantId":"CREDIT-FAIL","monthlyIncome":6000,"requestedAmount":30000}
+  ],
+  "order_fulfillment": [
+    {"customerRef":"C-01","productId":"SKU-1","quantity":2,"deliveryPreference":"STANDARD","paymentToken":"ok","customerCategory":"REGULAR"},
+    {"customerRef":"C-02","productId":"OOS-1","quantity":2,"deliveryPreference":"STANDARD","paymentToken":"ok","customerCategory":"REGULAR"},
+    {"customerRef":"C-03","productId":"SKU-1","quantity":2,"deliveryPreference":"STANDARD","paymentToken":"decline","customerCategory":"REGULAR"},
+    {"customerRef":"C-04","productId":"SKU-1","quantity":15,"deliveryPreference":"EXPRESS","paymentToken":"ok","customerCategory":"VIP"},
+    {"customerRef":"C-05","productId":"FAIL-42","quantity":1,"deliveryPreference":"STANDARD","paymentToken":"ok","customerCategory":"REGULAR"}
+  ],
+  "patient_triage": [
+    {"patientRef":"PAT-101","appointmentPreference":"morning","urgencyIndicator":"LOW","symptomsSummary":"mild"},
+    {"patientRef":"PAT-102","appointmentPreference":"morning","urgencyIndicator":"HIGH","symptomsSummary":"persistent"},
+    {"patientRef":"PAT-103","appointmentPreference":"morning","urgencyIndicator":"CRITICAL","symptomsSummary":"acute"},
+    {"patientRef":"PAT-104","appointmentPreference":"none","urgencyIndicator":"LOW","symptomsSummary":"mild"},
+    {"patientRef":"PAT-FAIL","appointmentPreference":"morning","urgencyIndicator":"LOW","symptomsSummary":"mild"}
+  ]
+}

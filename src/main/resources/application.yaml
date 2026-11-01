@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: camunda-practical-labs
+camunda:
+  client:
+    mode: ${CAMUNDA_MODE:saas}
+    auth:
+      client-id: ${CAMUNDA_CLIENT_ID:}
+      client-secret: ${CAMUNDA_CLIENT_SECRET:}
+    cloud:
+      cluster-id: ${CAMUNDA_CLUSTER_ID:}
+      region: ${CAMUNDA_REGION:bru-2}
+    worker:
+      defaults:
+        max-jobs-active: 10
+logging:
+  level:
+    io.camunda: INFO
